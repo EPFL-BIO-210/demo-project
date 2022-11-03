@@ -12,6 +12,7 @@ d = 0.75  # factor describing growth of foxes based on caught rabbits
 
 t = np.linspace(0, 15, 1000)  # time
 X0 = np.array([10, 5])  # initial conditions: 10 rabbits and 5 foxes
+
 X, infodict = integrate.odeint(lambda x, _: dx_dt(x, a, b, c, d), X0, t, full_output=True)
 
 print(X)
