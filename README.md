@@ -19,10 +19,13 @@ If you are a new user, we recommend checking out the detailed Github Guides.
 - matplotlib
 - sklearn
 
-Specifially, I'm sharing a requirements file (req.txt)
+Specifically, I'm sharing an environment file (environment.yml)
 
-`conda create -n <environment-name> --file req.txt`
+`conda env create -f environment.yml`
 
+You can activate the environment using:
+
+`conda activate BIO210_demo`
 
 # Testing
 
