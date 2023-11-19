@@ -22,5 +22,5 @@ X, infodict = integrate.odeint(
 evolution(t, X)
 
 
-print("Checking fix points of ODE.")
-check_equilibrium(a, b, c, d)
+# print("Checking fix points of ODE.")
+# check_equilibrium(a, b, c, d)

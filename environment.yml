@@ -1,0 +1,10 @@
+name: BIO210_demo
+channels:
+  - defaults
+dependencies:
+  - python=3.9
+  - scipy
+  - numpy
+  - matplotlib
+  - scikit-learn
+prefix: /home/alessandro/anaconda3/envs/BIO210_demo
