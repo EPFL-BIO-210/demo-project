@@ -2,7 +2,7 @@
 
 import numpy as np
 from scipy import integrate
-from LotkaVolterraModel import dX_dt
+from LotkaVolterraModel import dX_dt, check_equilibrium
 from Visualization import evolution
 
 # Definition of parameters
@@ -22,3 +22,5 @@ X, infodict = integrate.odeint(
 evolution(t, X)
 
 
+# print("Checking fix points of ODE.")
+# check_equilibrium(a, b, c, d)
