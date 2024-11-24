@@ -2,6 +2,7 @@
 
 import numpy as np
 from scipy import integrate
+from Visualization import evolution
 
 class LVM:
     """ Simple LotkaVolterraClass with Euler Integration """
@@ -71,3 +72,5 @@ lvm.dynamics(X0, numiter, saver)    # Running the dynamics and storing in saver 
 
 T, Xeuler = saver.get_data()["state_T"], np.array(saver.get_data()["state_X"])
 rabbits, foxes = Xeuler.T
+
+evolution(T, Xeuler)
