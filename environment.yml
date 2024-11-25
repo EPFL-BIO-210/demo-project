@@ -7,4 +7,3 @@ dependencies:
   - numpy
   - matplotlib
   - scikit-learn
-prefix: /home/alessandro/anaconda3/envs/BIO210_demo
