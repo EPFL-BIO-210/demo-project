@@ -1,16 +1,15 @@
-import sys
 import doctest
-import LotkaVolterraModel
 import numpy as np
+import LotkaVolterraModel
 
 
 def test_LotkaVolterraModel():
-    """ integrating the doctests in the pytest framework """
+    """integrating the doctests in the pytest framework"""
     assert doctest.testmod(LotkaVolterraModel, raise_on_error=True)
 
 
 def test_dX_dt():
-    """ a first example """
+    """a first example"""
     assert (
         LotkaVolterraModel.dX_dt(np.ones(2), 1, 0.1, 1.5, 0.75)
         - np.array([0.9, -1.425])
@@ -18,7 +17,7 @@ def test_dX_dt():
 
 
 def test_dX_dt_wronginput():
-    """ testing for wrong dimensions (ValueError) """
+    """testing for wrong dimensions (ValueError)"""
     import pytest
 
     with pytest.raises(ValueError):
@@ -55,12 +54,12 @@ def test_check_equilibrium():
 
 
 def test_printoutput_checkeq(capsys):
-    """ 
+    """
     Unit-test that check the print statements in LotkaVolterraModel.check_equilibrium()
-    
-    Notes: 
+
+    Notes:
     ------
-    Based on capture: https://docs.pytest.org/en/6.2.x/capture.html 
+    Based on capture: https://docs.pytest.org/en/6.2.x/capture.html
     """
     LotkaVolterraModel.check_equilibrium()  # run check equlibrium and
     captured = capsys.readouterr()  # capture the output
