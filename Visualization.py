@@ -5,12 +5,12 @@ Adapted from:
 https://github.com/scipy/scipy-cookbook/blob/master/ipython/LotkaVolterraTutorial.ipynb
 """
 
-import matplotlib.pyplot as plt
 import os
+import matplotlib.pyplot as plt
 
 
 def _createfolder(folder="graphs"):
-    """ Make directory named folder in current working directory,
+    """Make directory named folder in current working directory,
     if it doesn't exist. Returns name of folder.
     """
     if not os.path.isdir(folder):
@@ -20,7 +20,7 @@ def _createfolder(folder="graphs"):
 
 
 def evolution(t, X, savefig=True, showfig=True):
-    """ Simple function to plot temporal evolution of X. """
+    """Simple function to plot temporal evolution of X."""
     rabbits, foxes = X.T
 
     fig1 = plt.figure()
